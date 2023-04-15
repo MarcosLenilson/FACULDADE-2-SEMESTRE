@@ -5,28 +5,28 @@ from datetime import datetime as dt
 
 #! Cw4 - Linguagem de Programação => Seção 1
 
-# ? pd.Series(data=None, index=None, dtype=None, name=None, copy=False, fastpath=False)
-# ? pd.Series(data=5)
-# ? names = pd.Series('Howard Ian Peter Jonah Kellie'.split())
-# ? print(names)
+pd.Series(data=None, index=None, dtype=None, name=None, copy=False, fastpath=False)
+pd.Series(data=5)
+names = pd.Series('Howard Ian Peter Jonah Kellie'.split())
+print(names)
 
-# ? pd.DataFrame(data=None, index=None, columns=None, dtype=None, copy=False)
+pd.DataFrame(data=None, index=None, columns=None, dtype=None, copy=False)
 
 # * Cria um DataFrame, de uma coluna a partir de uma lista
-# ? names = pd.DataFrame('Howard Ian Peter Jonah Kellie'.split(), columns=['nome'])
-# ? print(names)
+names = pd.DataFrame('Howard Ian Peter Jonah Kellie'.split(), columns=['nome'])
+print(names)
 
 # * Cria um DataFrame, com VARIAS COLUNAS a partir de uma lista
 
-# ? lista_nomes = 'Howard Ian Peter Jonah Kellie'.split()
-# ? lista_cpfs = '111.111.111-11 222.222.222-22 333.333.333-33 444.444.444-44 555.555.555-55'.split()
-# ? lista_emails = 'risus.varius@dictumPhasellusin.ca Nunc@vulputate.ca fames.ac.turpis@cursusa.org non@felisullamcorper.org eget.dictum.placerat@necluctus.co.uk'.split()
-# ? lista_idades = [32, 22, 25, 29, 38]
-# ? dados = list(zip(lista_nomes, lista_cpfs, lista_idades, lista_emails)) # * Cria uma lista de tupla
+lista_nomes = 'Howard Ian Peter Jonah Kellie'.split()
+lista_cpfs = '111.111.111-11 222.222.222-22 333.333.333-33 444.444.444-44 555.555.555-55'.split()
+lista_emails = 'risus.varius@dictumPhasellusin.ca Nunc@vulputate.ca fames.ac.turpis@cursusa.org non@felisullamcorper.org eget.dictum.placerat@necluctus.co.uk'.split()
+lista_idades = [32, 22, 25, 29, 38]
+dados = list(zip(lista_nomes, lista_cpfs, lista_idades, lista_emails)) # * Cria uma lista de tupla
 
 # * Cria um DataFrame a partir de uma lista de tuplas
-# ? table = pd.DataFrame(dados, columns=['nome', 'cpfs', 'idade', 'email'])
-# ? print(table)
+table = pd.DataFrame(dados, columns=['nome', 'cpfs', 'idade', 'email'])
+print(table)
 
 # * A RESOLVER A RESOLVER A RESOLVER A RESOLVER A RESOLVER A RESOLVER A RESOLVER A RESOLVER A RESOLVER
 # * A RESOLVER A RESOLVER A RESOLVER A RESOLVER A RESOLVER A RESOLVER A RESOLVER A RESOLVER A RESOLVER
@@ -37,15 +37,15 @@ from datetime import datetime as dt
 
 #! Cw4 - Linguagem de Programação => Seção 2
 
-# ? lista_nomes_titanic = pd.DataFrame(['Mr. Owen Harris Braund', 'Mrs. John Bradley Florence Briggs Thayer Cumings','Miss. Laina Heikkinen', 'Mrs Jacques Heath (Lily May Peel) Futrelle', 'Mr. William Henry Allen'.split()])
+lista_nomes_titanic = pd.DataFrame(['Mr. Owen Harris Braund', 'Mrs. John Bradley Florence Briggs Thayer Cumings','Miss. Laina Heikkinen', 'Mrs Jacques Heath (Lily May Peel) Futrelle', 'Mr. William Henry Allen'.split()])
 
-# ? lista_idades = [22, 38, 26, 35, 35]
-# ? lista_classe = [3, 1, 3, 1, 3]
-# ? homens = pd['sexo'] == 'Masculino'
-# ? print(homens)
+lista_idades = [22, 38, 26, 35, 35]
+lista_classe = [3, 1, 3, 1, 3]
+homens = pd['sexo'] == 'Masculino'
+print(homens)
 
 
-# ? table = pd.DataFrame(dados, columns=['classe', 'nome', 'sexo', 'idade', 'sobreviveu'])
+table = pd.DataFrame(dados, columns=['classe', 'nome', 'sexo', 'idade', 'sobreviveu'])
 
 # * A RESOLVER A RESOLVER A RESOLVER A RESOLVER A RESOLVER A RESOLVER A RESOLVER A RESOLVER A RESOLVER
 # * A RESOLVER A RESOLVER A RESOLVER A RESOLVER A RESOLVER A RESOLVER A RESOLVER A RESOLVER A RESOLVER
@@ -64,7 +64,7 @@ pd.Series(data=None, index=None, dtype=None,
           name=None, copy=False, fastpath=False)
 # Cria uma Series com uma lista de nomes
 names = pd.Series('Howard Ian Peter Jonah Kellie'.split())
-# ? print(names)
+print(names)
 
 #!  Series com um dicionário
 dados = {
@@ -75,7 +75,7 @@ dados = {
     'nome5': 'Kellie',
 }
 dicionário = pd.Series(dados)  # ! Chave
-# ? print(dicionário)                           #! Índice     Coluna
+print(dicionário)                           #! Índice     Coluna
 # nome1     Howard
 # nome2     Ian
 # nome3     Peter
@@ -87,11 +87,11 @@ dicionário = pd.Series(dados)  # ! Chave
 lista_nomes = 'Howard Ian Peter Jonah Kellie'.split()
 lista_cpfs = '111.111.111-11 222.222.222-22 333.333.333-33 444.444.444-44 555.555.555-55'.split()
 dados1 = pd.Series(lista_nomes, index=lista_cpfs)
-# ? print(dados1)
+print(dados1)
 
 #! Localizador
 
-# ? print(dados1.loc['111.111.111-11'])
+print(dados1.loc['111.111.111-11'])
 # * Atributo loc()
 
 
@@ -100,39 +100,39 @@ dados1 = pd.Series(lista_nomes, index=lista_cpfs)
 series_dados = pd.Series([10.2, -1, None, 15, 23.4])
 
 # Retorna uma tupla com o número de linhas
-# ? print('Quantidade de linhas = ', series_dados.shape)
+print('Quantidade de linhas = ', series_dados.shape)
 
 # Retorna o tipo de dados, se for misto será object
-# ? print('Tipo de dados', series_dados.dtypes)
+print('Tipo de dados', series_dados.dtypes)
 
 # Verifica se os valores são únicos (sem duplicações)
-# ? print('Os valores são únicos?', series_dados.is_unique)
+print('Os valores são únicos?', series_dados.is_unique)
 
 # Verifica se existem valores nulos
-# ? print('Existem valores nulos?', series_dados.hasnans)
+print('Existem valores nulos?', series_dados.hasnans)
 
 # Conta quantas valores existem (excluí os nulos)
-# ? print('Quantos valores existem?', series_dados.count())
+print('Quantos valores existem?', series_dados.count())
 
 # Extrai o menor valor da Series (nesse caso os dados precisam ser do mesmo tipo)
-# ? print('Qual o menor valor?', series_dados.min())
+print('Qual o menor valor?', series_dados.min())
 
 # Extrai o valor máximo, com a mesma condição do mínimo
-# ? print('Qual o maior valor?', series_dados.max())
+print('Qual o maior valor?', series_dados.max())
 
 # Extrai a média aritmética de uma Series numérica
-# ? print('Qual a média aritmética?', series_dados.mean())
+print('Qual a média aritmética?', series_dados.mean())
 
 # Extrai o desvio padrão de uma Series numérica
-# ? print('Qual o desvio padrão?', series_dados.std())
+print('Qual o desvio padrão?', series_dados.std())
 
 # Extrai a mediana de uma Series numérica
-# ? print('Qual a mediana?', series_dados.median())
+print('Qual a mediana?', series_dados.median())
 
 
 #! RESUMO
 
-# ? print('\nResumo:\n', series_dados.describe()) # Exibe um resumo sobre os dados na Series
+print('\nResumo:\n', series_dados.describe()) # Exibe um resumo sobre os dados na Series
 
 
 #! 👇👇👇 👇👇👇DATAFRAME DATAFRAME DATAFRAME DATAFRAME DATAFRAME DATAFRAME DATAFRAME DATAFRAME DATAFRAME DATAFRAME DATAFRAME
@@ -145,22 +145,22 @@ pd.DataFrame(data=None, index=None, columns=None, dtype=None, copy=False)
 
 #! DATAFRAME com LISTA
 
-# ? lista_nomes = 'Howard Ian Peter Jonah Kellie'.split()
-# ? idade = [255, 38, 26, 35, 35]
-# ? dados = list(zip(lista_nomes, idade))
-# ? pd.DataFrame(dados, columns=['nomes', 'idade'])
-# ? print(pd.DataFrame(dados, columns=['nomes', 'idade']))
+lista_nomes = 'Howard Ian Peter Jonah Kellie'.split()
+idade = [255, 38, 26, 35, 35]
+dados = list(zip(lista_nomes, idade))
+pd.DataFrame(dados, columns=['nomes', 'idade'])
+print(pd.DataFrame(dados, columns=['nomes', 'idade']))
 
 #! 👆👆👆 👆👆👆 DATAFRAME DATAFRAME DATAFRAME DATAFRAME DATAFRAME DATAFRAME DATAFRAME DATAFRAME DATAFRAME DATAFRAME DATAFRAME DATAFRAME
 
 #! MÉTODO READ()
 
-# ? url = 'https://en.wikipedia.org/wiki/Minnesota'
+url = 'https://en.wikipedia.org/wiki/Minnesota'
 
-# ? dfs = pd.read_html(url)
-# ? print(type(dfs))
-# ? print(len(dfs))
-# ? print(dfs)
+dfs = pd.read_html(url)
+print(type(dfs))
+print(len(dfs))
+print(dfs)
 
 
 #! TELE AULA 4 AULA 2 => LIVRO TEXTO => UNIDADE 4 SEÇÃO 2 = NÃO PODE FALTAR
@@ -191,7 +191,7 @@ pd.DataFrame(data=None, index=None, columns=None, dtype=None, copy=False)
 
 json = pd.read_json(
     'https://api.bcb.gov.br/dados/serie/bcdata.sgs.11/dados?formato=json').head()
-# ? print(json)
+print(json)
 
 #! A leitura de um arquivo CSV deve ser feita com o método:
 
@@ -201,7 +201,7 @@ json = pd.read_json(
 
 csv = pd.read_csv(
     'https://people.sc.fsu.edu/~jburkardt/data/csv/cities.csv').head()
-# ? print(csv)
+print(csv)
 
 #! MANIPULAÇÃO DE DADOS COM PANDAS
 
@@ -211,13 +211,13 @@ csv = pd.read_csv(
 
 df_selic = pd.read_json(
     'https://api.bcb.gov.br/dados/serie/bcdata.sgs.11/dados?formato=json')
-# ? print(df_selic.info())
+print(df_selic.info())
 
 #! REMOVER LINHAS DUPLICADAS
 
 # * Para o carregamento de uma base de dados, um dos primeiros tratamentos que devemos fazer é remover os dados duplicados.
 
-# ? print(df_selic.drop_duplicates(keep='last', inplace=True))
+print(df_selic.drop_duplicates(keep='last', inplace=True))
 
 #! CRIAR NOVAS COLUNAS
 
@@ -226,9 +226,9 @@ data_extracao = date.today()
 df_selic['data_extracao'] = data_extracao
 df_selic['responsavel'] = 'Autora'
 
-# ? print(df_selic.info())
+print(df_selic.info())
 df_selic.head()
-# ? print(df_selic)
+print(df_selic)
 
 #! MÉTODO TO_DATETIME() E ASTYPE()
 
