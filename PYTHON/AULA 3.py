@@ -16,42 +16,41 @@
 
 # EXEMPLOS DE CLASSE:
 
-# ? class Pessoa:
-# ?     def imprimir_mensagem(self, nome):
-# ?        # ? print(f"Olá {nome}, seja bem vindo!")
+class Pessoa:
+     def imprimir_mensagem(self, nome):
+         print(f"Olá {nome}, seja bem vindo!")
 
 
-# ? app = Pessoa()  # ! Instanciando um OBJETO do tipo Pessoa
-# ?app.imprimir_mensagem('Marcos Lenilson')
+app = Pessoa()  # ! Instanciando um OBJETO do tipo Pessoa
+app.imprimir_mensagem('Marcos Lenilson')
 
 # MAIS EXEMPLOS:
 
 
-# ? class Calculadora:
+class Calculadora:
 
-# ?     def somar(self, n1, n2):
-# ?         return n1 + n2
+    def somar(self, n1, n2):
+        return n1 + n2
 
-# ?     def subtrair(self, n1, n2):
-# ?         return n1 - n2
+    def subtrair(self, n1, n2):
+        return n1 - n2
 
-# ?     def multiplicar(self, n1, n2):
-# ?         return n1 * n2
+    def multiplicar(self, n1, n2):
+        return n1 * n2
 
-# ?     def dividir(self, n1, n2):
-# ?         return n1 / n2
+    def dividir(self, n1, n2):
+        return n1 / n2
 
-# ?     def dividir_resto(self, n1, n2):
-# ?         return n1 % n2
+    def dividir_resto(self, n1, n2):
+        return n1 % n2
 
+calc = Calculadora()
 
-# ? calc = Calculadora()
-
-# ? print('Soma:', calc.somar(4, 3))
-# ? print('Subtração:', calc.subtrair(13, 7))
-# ? print('Multiplicação:', calc.multiplicar(2, 4))
-# ? print('Divisão:', calc.dividir(16, 5))
-# ? print('Resto da divisão:', calc.dividir_resto(7, 3))
+print('Soma:', calc.somar(4, 3))
+print('Subtração:', calc.subtrair(13, 7))
+print('Multiplicação:', calc.multiplicar(2, 4))
+print('Divisão:', calc.dividir(16, 5))
+print('Resto da divisão:', calc.dividir_resto(7, 3))
 
 
 #! CONSTRUTOR DA CLASSE __INIT__()
@@ -60,38 +59,39 @@
 
 # EXEMPLOS:
 
-# ? class Televisao:
-# ?     def __init__(self):
-# ?         self.volume = 10
 
-# ?     def aumentar_volume(self):
-# ?         self.volume += 1
+class Televisao:
+    def __init__(self):
+        self.volume = 10
 
-# ?     def diminuir_volume(self):
-# ?         self.volume -= 1
+    def aumentar_volume(self):
+        self.volume += 1
+
+    def diminuir_volume(self):
+        self.volume -= 1
 
 
-# ?tv = Televisao()
-# ?print("Volume ao ligar a tv = ", tv.volume)
-# ?tv.aumentar_volume()
-# ?print("Volume atual = ", tv.volume)
+tv = Televisao()
+print("Volume ao ligar a tv = ", tv.volume)
+tv.aumentar_volume()
+print("Volume atual = ", tv.volume)
 
 # MAIS EXEMPLOS:
 
 
-# ?class Gato:
-# ?     '''Classe para trabalhar com gatos'''
+class Gato:
+     '''Classe para trabalhar com gatos'''
 
-#    ? def __init__(self, nome, idade):
-#   ?      '''Inicializa o objeto capturando o nome e a idade do animal'''
-#  ?       self.nome = nome
-# ?        self.idade = idade
-# ? print('O seu gato se chama', self.nome, 'e ele tem', idade, 'anos.')
+def __init__(self, nome, idade):
+    '''Inicializa o objeto capturando o nome e a idade do animal'''
+    self.nome = nome
+    self.idade = idade
+print('O seu gato se chama', self.nome, 'e ele tem', idade, 'anos.')
 
 
-# ? nome_gato = input('Digite o nome do seu gato: ')
-# ? idade_gato = input('Digite a idade do seu gato: ')
-# ? gt = Gato(nome_gato, idade_gato)
+nome_gato = input('Digite o nome do seu gato: ')
+idade_gato = input('Digite a idade do seu gato: ')
+gt = Gato(nome_gato, idade_gato)
 
 
 #! VARIÁVEIS E MÉTODOS PRIVADOS => Modificadores de acesso = public, private e protected
@@ -100,16 +100,15 @@
 
 # EXEMPLOS:
 
-# ? class ContaCorrente:
-# ?     def __init__(self):
-# ?         self.saldo = None
+class ContaCorrente:
+    def __init__(self):
+        self.saldo = None
 
-# ?     def depositar(self, valor):
-# ?         self._saldo += valor
+    def depositar(self, valor):
+        self._saldo += valor
 
-# ?     def consultar_saldo(self):
-# ?         return self._saldo
-
+    def consultar_saldo(self):
+        return self._saldo
 
 # * Lembre-se: em Python, atributos e métodos privados são apenas uma convenção, pois, na prática, os recursos podem ser acessados de qualquer forma.
 
@@ -127,49 +126,44 @@
 
 # print(dir(Pessoa()))
 
-# ?     def __init__(self):
-# ?         self.cpf = None
-# ?         self.nome = None
-# ?         self.endereco = None
+    def __init__(self):
+        self.cpf = None
+        self.nome = None
+        self.endereco = None
 
 
-# ? class Funcionario(Pessoa):
+class Funcionario(Pessoa):
+    def __init__(self):
+        self.matricula = None
+        self.salario = None
 
-# ?     def __init__(self):
-# ?         self.matricula = None
-# ?         self.salario = None
+    def bater_ponto(self):
+        pass
 
-# ?     def bater_ponto(self):
-# ?         # ? código aqui
-# ?         pass
-
-# ?     def fazer_login(self):
-# ?         # ? código aqui
-# ?         pass
+    def fazer_login(self):
+        pass
 
 
-# ? class Cliente(Pessoa):
+class Cliente(Pessoa):
 
-# ?     def __init__(self):
-# ?         self.codigo = None
-# ?         self.dataCadastro = None
+    def __init__(self):
+        self.codigo = None
+        self.dataCadastro = None
+    def fazer_compra(self):
 
-# ?     def fazer_compra(self):
-# ?         # ? código aqui
-# ?         pass
+        pass
 
-# ?     def pagar_conta(self):
-# ?         # ? código aqui
-# ?         pass
+    def pagar_conta(self):
+        pass
 
 
-# ? f1 = Funcionario()
-# ? f1.nome = "Funcionário A"
-# ? print(f1.nome)
+f1 = Funcionario()
+f1.nome = "Funcionário A"
+print(f1.nome)
 
-# ? c1 = Cliente()
-# ? c1.cpf = "111.111.111-11"
-# ? print(c1.cpf)
+c1 = Cliente()
+c1.cpf = "111.111.111-11"
+print(c1.cpf)
 
 
 #! MÉTODOS MÁGICOS EM PYTHON
@@ -177,8 +171,8 @@
 # * Quando uma classe é criada em Python, ela herda, mesmo que não declarado explicitamente, todos os recursos de uma classe-base chamada object. Veja o resultado da função dir(), que retorna uma lista com os recursos de um objeto.
 
 # EXEMPLOS:
-# ? class Pessoa:
-# ? print(dir(Pessoa()))
+class Pessoa:
+print(dir(Pessoa()))
 
 
 #! EXEMPLIFICANDO
