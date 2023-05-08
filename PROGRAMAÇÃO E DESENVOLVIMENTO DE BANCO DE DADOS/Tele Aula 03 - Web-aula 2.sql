@@ -26,6 +26,7 @@ CREATE TABLE  jogo(
 	FOREIGN KEY (Localizacao_Id) REFERENCES Localizacao(Id)
 );
 
+########## CRIAÇÂO DO BANCO DE DADOS (LOJA) ##########
 
 CREATE DATABASE Loja;
 USE Loja;
@@ -37,6 +38,8 @@ CREATE TABLE Categoria(
 
 SELECT * FROM Categoria;
 
+########## CRIAÇÂO DA TABELAS (PRODUTO E CATEGORIA) ##########
+
 CREATE TABLE Produto(
 	Codigo INT(3) PRIMARY KEY AUTO_INCREMENT,
 	Nome VARCHAR(50) NOT NULL,
@@ -47,17 +50,36 @@ CREATE TABLE Produto(
 
 SELECT * FROM Produto;
 
+########## INSERINDO DADOS NAS TABELAS (PRODUTO E CATEGORIA) ##########
 
 INSERT Categoria 
 VALUES (0, "DVD"),(0, "Livro"),(0, "Informática");
 
 INSERT Produto 
-VALUES (0, "Código da Vinci", "39.99", 2),(0, "Hancock", "89.99", 1),(0, "Dario de um Mago", "19.99", 2),(0, "Eu sou a lenda", "39.99", 1);
+VALUES (0, "Código da Vinci", "39.99", 2),(0, "Hancock", "89.99", 1),(0, "Dario de um Mago", "19.99", 2),(0, "Eu sou a lenda", "39.99", 1),(0, "Laptop Lonovo", "539.99", 3);
 
 
-
-
-
+## PARAMETRO JOIN
+	-- Unir duas ou mais tabelas, ao se apontar os campos correspondentes entre elas.
+    
+## tipos de JOIN: INNER, LEFT e RIGHT JOIN
+	-- INNER JOIN = Junção interna
+    -- RIGHT JOIN = Junção externa
+    -- LEFT  JOIN = Junção externa
+    -- A palavra “ON” tem a função de fazer o apontamento da chave primária da tabela “Categoria” para a chave estrangeira da tabela “Produto”.
+    -- Podemos usar WHERE para condições específicas 
+    
+    
+SELECT categoria.nome, produto.nome  -- Campo a ser pesquisado
+	FROM Categoria INNER JOIN Produto -- Tabelas (primeira JOIN segunda)
+	ON Categoria.Id = Produto.Id_Categoria -- Categoria.Id => tabela_01 (Chave primária) e Produto.Id_Categoria => tabela_02 (Chave estrangeira)
+	WHERE produto.valor < 50.00;
+	
+    ## SAIDA 
+		#   nome	nome
+		#   Livro	Código da Vinci
+		#	Livro	Dario de um Mago
+		#	DVD		Eu sou a lenda
 
 
 
