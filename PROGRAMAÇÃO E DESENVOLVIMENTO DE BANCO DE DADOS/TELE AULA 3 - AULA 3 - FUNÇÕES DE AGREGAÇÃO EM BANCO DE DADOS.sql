@@ -102,3 +102,35 @@ SELECT AVG(Valor) AS "Valor Médio" FROM Veiculos;
 SELECT AVG(Valor) AS "Valor Médio" FROM Veiculos GROUP BY Marca;	
 	-- A função de agregação AVG permite que o qualificador GROUP BY seja utilizado.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
