@@ -101,36 +101,72 @@ SELECT AVG(Valor) AS "Valor Médio" FROM Veiculos;
 
 SELECT AVG(Valor) AS "Valor Médio" FROM Veiculos GROUP BY Marca;	
 	-- A função de agregação AVG permite que o qualificador GROUP BY seja utilizado.
+    
+    
+    
+ ##################################### Avançando na prática ####################################
+##################################### Agenciador de Atletas #####################################    
 
+CREATE DATABASE Banco_de_Atletas;
+USE Banco_de_Atletas;
 
+CREATE TABLE Atletas (
+	RA INT(3) PRIMARY KEY NOT NULl AUTO_INCREMENT,
+	Nome varchar(20) NOT NULL,
+	Clube varchar(20) NOT NULL,
+	Qtd_Titulos INT(3) NOT NULL
+);
 
+INSERT Atletas 
+	VALUES (0, "Romario", "Vasco", 10),
+		(0, "Gustavo Borges", "Pinheiros", 25),
+		(0, "Maguila", "Aacademia de Boxe", 5),
+		(0, "Ayrton Senna", "Willians", 3),
+		(0, "Bob Burnquest", "semclube", 15),
+		(0, "Ronaldo", "Real Madrid", 6),
+		(0, "Ueda", "sem clube", 11),
+		(0, "Gabriel Jesus", "Palmeiras", 4),
+		(0, "Jaqueline", "SESI", 14),
+		(0, "Serena Williams", "Sem Clube", 7);    
+        
+SELECT * FROM atletas;        
+        
+        
+## 1. O atleta com mais títulos.
 
+SELECT MAX(Qtd_Titulos) AS "Mais títulos" FROM atletas;
 
+## 2. O atleta com menos títulos.
 
+SELECT MIN(Qtd_Titulos) AS "Menos títulos" FROM atletas;   
+    
+## 3. A média de títulos dos atletas cadastrados.
+    
+SELECT AVG(Qtd_Titulos) AS "Média de títulos" FROM atletas;       
+    
+## 4. A quantidade de atletas cadastrados.
 
+SELECT COUNT(*) AS "Numero de Registros" FROM atletas; 
 
+## 5. O total de títulos de todos os atletas cadastrados.     
 
+SELECT SUM(Qtd_Titulos) AS "Total de Títulos" FROM atletas;     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  

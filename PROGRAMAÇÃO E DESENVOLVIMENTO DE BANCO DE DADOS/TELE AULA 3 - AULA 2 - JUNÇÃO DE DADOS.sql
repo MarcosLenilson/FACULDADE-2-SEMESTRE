@@ -119,14 +119,16 @@ VALUES (0, "Guerra", "001"),
 (0, "Aventura", "100"),
 (0, "Aventura", "101"),
 (0, "RPG", "150"),
-(0, "RPG", "151");
+(0, "RPG", "151"),
+(0, "Plataforma 2D", "200"),
+(0, "Plataforma 2D", "201");
 
 INSERT jogo 
 VALUES (0, "COD 3", 125.00, 1),
 (0, "BF 1", 150.00, 2),
-(0, "GOW 4", 200.00, 3),
-(0, "SLY", 99.00, 4),
-(0, "FF XV", 205.00, 5);
+(0, "Zelda Botw", 200.00, 3),
+(0, "Zelda Oot", 99.00, 4),
+(0, "Chrone T", 205.00, 5);
 
 
 ## 1. Identificar o nome do jogo e a prateleira, fornecendo o nome de uma seção;
