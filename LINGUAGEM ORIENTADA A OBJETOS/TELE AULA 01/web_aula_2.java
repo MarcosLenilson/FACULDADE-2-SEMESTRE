@@ -1,12 +1,12 @@
 /* 
- ####################### LIVRO TEXTE UND 1 SEÇÃO 1 => NÃO PODE FALTAR #######################
-  ####################### TELE AULA 1 - WEB_AULA 2 #######################
+ ####################### LIVRO TEXTO UND 1 SEÇÃO 1 => NÃO PODE FALTAR #######################
+          ####################### TELE AULA 1 - WEB_AULA 2 #######################
               
             
  ####################### O QUE É P.O.O ? #######################
     ##> Um paradigma de programação que aproxima a manipulação das estruturas de um programa ao manuseio das coisas do mundo real.
     ##> É uma forma de escrita.
-    ##> Uma das principais características é a possibilidade de se reutilizar codigos. Para isso se usa CLASSES
+    ##> Uma das principais características é a possibilidade de se reutilizar códigos. Para isso se usa CLASSES
 
 
  ==>> PROGRAMAÇÃO PROCEDURAL
@@ -42,7 +42,7 @@
 
     -- ENCAPSULAMENTO
         -> Pegar algo e colocar dentro de alguma coisa, proteger, guardar, tornar inacessivel. É possivel 
-           esconder propriedades e metodos da classe, impedindo mudanças nos atributos.
+           esconder propriedades e métodos da classe, impedindo mudanças nos atributos.
 
     -- HERANÇA
         -> Representa a relação entre classes diferentes para reutilização de codigo e 
@@ -71,6 +71,3 @@
         -> Dá ao objeto da classe a capacidade de executar algum tipo de ação, comportamento ou processamento.
 
 */
-
-
-

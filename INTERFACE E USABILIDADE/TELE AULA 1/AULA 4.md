@@ -51,7 +51,7 @@ As funções cognitivas incluem: inteligência, memória, funções executivas, 
 
     { [ Sentidos ] [ Filtros ] [ Apreensão ] [ Interpretação ] [ Reação ] }
 
-Os sensores captam uma informação, o cerebro seleciona quais informações serão processadas.  Essas informações passam por filtros, que são formados pelas características de <b>personalidade, crenças, valores, conhecimento, experiências passadas</b> e todo o repertório mental pessoal do indivíduo. Cada conjunto de filtros é único e individual, e são eles que definem quais informações são mais relevantes ou interessantes para o cérebro processar, assim como as percepções e interpretações das informações. 
+Os sensores captam uma informação, o cérebro seleciona quais informações serão processadas.  Essas informações passam por filtros, que são formados pelas características de <b>personalidade, crenças, valores, conhecimento, experiências passadas</b> e todo o repertório mental pessoal do indivíduo. Cada conjunto de filtros é único e individual, e são eles que definem quais informações são mais relevantes ou interessantes para o cérebro processar, assim como as percepções e interpretações das informações. 
 <br>
 <br>
 
@@ -68,9 +68,3 @@ Um importante fator no processo cognitivo é a atenção, ela define por quanto 
 
 
 Após a apreensão das informações, o cérebro as interpreta também utilizando os mesmos filtros já mencionados, e essa interpretação levará a pessoa a agir. Essa ação pode ser um simples pensamento, que pode incluir o entendimento de uma palavra ou um ícone, por exemplo, a ação pode ser uma fala, um movimento corporal, ou qualquer outra ação física ou mental, e é aí que ocorre a interação. 
-
-
-
-
-
-
