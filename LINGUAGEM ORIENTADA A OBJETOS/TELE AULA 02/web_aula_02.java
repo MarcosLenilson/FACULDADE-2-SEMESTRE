@@ -1,4 +1,8 @@
 /*
+ ####################### LIVRO TEXTO UND 2 SEÇÃO 1 => NÃO PODE FALTAR #######################
+          ####################### TELE AULA 2 - WEB_AULA 2 #######################
+
+          
  ! ATRIBUTOS E MÉTODOS ESTÁTICOS
 
     Imagine que você gostaria de modelar uma classe chamada Matemática para resolver problemas relacionados a essa área do conhecimento. Nessa classe, você gostaria que houvesse as seguintes constantes: número pi (PI), número de Euler (E) e número de ouro (PHI). A constante PI é famosa na matemática e representa a razão entre o comprimento da circunferência e o seu diâmetro; já a constante E representa a base dos logaritmos naturais; e a constante PHI representa uma proporção encontrada em diversas aplicações na natureza. Além disso, você também gostaria que houvesse dois métodos: um para a soma e outro para a multiplicação de inteiros, logo, decide implementar o Código (ARQUIVO Matematica.java)
@@ -46,22 +50,27 @@
 
  ! SOBRECARGA E SOBREPOSIÇÃO DE MÉTODOS
  
-    A sobrecarga caracteriza-se por haver mais de um método em uma mesma classe com o mesmo nome, no entanto, com diferentes tipos de dados ou diferentes quantidades de parâmetros.
+    A SOBRECARGA caracteriza-se por haver mais de um método em uma mesma classe com o mesmo nome, no entanto, com diferentes tipos de dados ou diferentes quantidades de parâmetros. Pode haver vários métodos com o mesmo nome, porém, a QUANTIDADE DE ARGUMENTOS deve ser diferentes e\ou os tipos podem ser diferentes.
+
+    Mais conceito: Consiste no conceito de polimorfismo, variações de um mesmo método, ou seja, criação de dois ou mais métodos, com os nomes totalmente iguais, porém, com argumentos diferentes.
+
+    Exemplo de código com sobrecarga de métodos esta no Código 2.4 no (ARQUIVO Matematica.java).
+
+    A SOBREPOSIÇÃO também chamada de sobrescrita de métodos, se caracteriza por possuir mais uma classe, em que a primeira herda a segunda. Se usa a notação @OVERRIDE para indicar que o método foi sobreposto.
+
+    Exemplo de código com sobrecarga de métodos esta no Código 2.5 no (ARQUIVO Matematica.java).
 
 
 
+    @ Quadro 2.1 | Comparativo entre sobrecarga e sobreposição de métodos
+    
+    Característica               Sobrecarga                        Sobreposição
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+    Argumentos	             Devem ser trocados	                Não devem ser trocados
+    Tipo de Retorno	         Pode ser trocado	                Não pode ser trocado
+    Tipo de Acesso	         Pode ser trocado	                Pode ser trocado por um modificador menos restritivo
+    Tipo de Exceção	         Pode ser trocado	                Pode ser trocado por uma exceção menos restritiva
+    Classe	                 Ocorre em uma classe	            Ocorre entre duas classes
+    Herança	                 Não envolve herança	            Envolve herança
+    Invocação	             Ocorre em tempo de compilação	    Ocorre em tempo de execução
 */

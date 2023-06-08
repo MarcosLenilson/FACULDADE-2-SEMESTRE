@@ -23,8 +23,7 @@ public class Matematica {
     }
 }
 
-// @ Código 2.2 | Modelagem de atributos e métodos de forma estática na classe
-// Matematica
+// @ Código 2.2 | Modelagem de atributos e métodos de forma estática na classe Matematica
 
 public class Matematica {
     static final double PI = 3.1415926535;
@@ -45,30 +44,6 @@ public class Matematica {
         System.out.println("Numero Phi: " + Matematica.PHI);
         System.out.println("Soma: " + Matematica.soma(5, 3));
         System.out.println("Mult: " + Matematica.mult(5, 3));
-    }
-}
-
-// @ Código 2.4 | Modelagem da classe Matematica com sobrecarga de método mult
-
-public class Matematica {
-    static int mult(int a, int b) {
-        return a * b;
-    }
-
-    static double mult(double a, double b) {
-        return a * b;
-    }
-
-    static double mult(double a, double b, double c) {
-        return a * b * c;
-    }
-
-    public static void main(String[] args) {
-        System.out.println("Mult: " + Matematica.mult(5, 3));
-        System.out.println("Mult: " + Matematica.mult(3.2, 4.1));
-        System.out.println("Mult: " + Matematica.mult(1.4, 2));
-        System.out.println("Mult: " + Matematica.mult(2, 3.5));
-        System.out.println("Mult: " + Matematica.mult(4.5, 5.2, 2));
     }
 }
 
@@ -104,3 +79,49 @@ public class Triangulo {
         System.out.println(trianEscaleno);
     }
 }
+
+// @ Código 2.4 | Modelagem da classe Matematica com sobrecarga de método mult
+
+public class Matematica {
+    static int mult(int a, int b) {
+        return a * b;
+    }
+
+    static double mult(double a, double b) {
+        return a * b;
+    }
+
+    static double mult(double a, double b, double c) {
+        return a * b * c;
+    }
+
+    public static void main(String[] args) {
+        System.out.println("Mult: " + Matematica.mult(5, 3));
+        System.out.println("Mult: " + Matematica.mult(3.2, 4.1));
+        System.out.println("Mult: " + Matematica.mult(1.4, 2));
+        System.out.println("Mult: " + Matematica.mult(2, 3.5));
+        System.out.println("Mult: " + Matematica.mult(4.5, 5.2, 2));
+    }
+}
+
+// @ Código 2.5 | Modelagem da classe Triangulo com sobreposição do método calcPerimetro
+
+public class Geom2D {
+    double perimetro;
+    double calcPerimetro(){
+        return 0;
+    }
+}
+ 
+public class Triangulo extends Geom2D { 
+    ...
+    @Override
+    double calcPerimetro() {
+        super.perimetro = this.ladoA + this.ladoB + this.ladoC;
+        return super.perimetro;
+    }
+    public static void main(String[] args) {
+        Triangulo trian = new Triangulo(3, 25, 26);
+        System.out.println("Perimetro: " + trian.calcPerimetro());
+    }
+} 
