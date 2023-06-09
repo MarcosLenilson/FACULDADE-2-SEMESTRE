@@ -37,31 +37,31 @@
  ! OPERADORES ARITMÉTICOS 
  
       @ Nome Operador               Símbolo             Exemplo em Java             Exemplo Numérico
-        Soma	                        +	                 x + y	                   5 + 3   (= 8)
+        Soma	                         +	                 x + y	                   5 + 3   (= 8)
         Subtração	                    -	                 x - y	                   5 - 3   (= 2)
         Multiplicação	                *	                 x * y	                   5 * 3   (= 15)
-        Divisão	                        /	                 x / y	                   5 / 3   (= 1)
-        Resto da divisão	            %	                 x % y	                   5 % 3   (= 2)
+        Divisão	                      /	                 x / y	                   5 / 3   (= 1)
+        Resto da divisão	             %	                 x % y	                   5 % 3   (= 2)
 
 
  ! OPERADORES RELACIONAIS
 
       @ Nome Operador               Símbolo             Exemplo em Java             Exemplo Numérico        
-        Igualdade	                  ==	                x == y	                5 == 3     (falso)
-        Diferente	                  !=	                x != y	                5 != 3    (verdade)
-        Maior que	                  >	                    x > y	                5 > 3     (verdade)
-        Maior ou igual a	          >=	                x >= y	                5 >= 3    (verdade)
-        Menor que	                  <	                    x < y	                5 < 3      (falso)
-        Menor ou igual a	          <=	                x <= y	                5 <= 3     (falso)
+        Igualdade	                  ==	                    x == y	                  5 == 3     (falso)
+        Diferente	                  !=	                    x != y	                  5 != 3    (verdade)
+        Maior que	                  >	                     x > y	                   5 > 3     (verdade)
+        Maior ou igual a	           >=	                    x >= y	                  5 >= 3    (verdade)
+        Menor que	                  <	                     x < y	                   5 < 3      (falso)
+        Menor ou igual a	           <=	                    x <= y	                  5 <= 3     (falso)
     
 
  ! OPERADORES DE ATRIBUIÇÃO
 
       @ Nome do Operador            Símbolo             Exemplo Encurtado           Significado Exemplo         
-        Atribuição de adição	      +=                	x += 3	                    x = x + 3
+        Atribuição de adição	         +=                	x += 3	                    x = x + 3
         Atribuição de subtração	      -=	                x -= 3	                    x = x - 3
         Atribuição de multiplicação	  *=	                x *= 3	                    x = x * 3
-        Atribuição de divisão	      /=	                x /= 3	                    x = x / 3
+        Atribuição de divisão	        /=	                x /= 3	                    x = x / 3
         Atribuição de resto	          %=	                x %= 3	                    x = x % 3    
 
  
@@ -77,9 +77,9 @@
  ! OPERADORES LÓGICOS
 
       @ Nome Operador               Símbolo             Exemplo em Java             Exemplo com Valores
-        E Lógico	                &&	                  exp1 && exp2	                true && false       (falso)
-        Ou Lógico	                ||	                  exp1 || exp2	                true || false       (verdade)
-        Negação Lógico	            !	                  !exp	                        !true               (falso) 
+        E Lógico	                     &&	                  exp1 && exp2	                true && false       (falso)
+        Ou Lógico	                    ||	                  exp1 || exp2	                true || false       (verdade)
+        Negação Lógico	                !	                  !exp	                        !true               (falso) 
 
 
  ! TIPOS DE DADOS 
@@ -93,13 +93,13 @@
       @ Nome do Tipo                   Tamanho em bits                 Tamanho em bytes                   Intervalo de Valores
 
         boolean	                              1	                               -                       true ou false
-        char	                              16                               2                	   0 até 65535   ou   '\u0000' até '\uffff'
-        byte	                              8	                               1	                   -128 até 127   ou   -27 até 27-1
-        short	                              16                               2                       -32.768 até 32.767   ou  -215 até 215-1
+        char	                                 16                               2                	      0 até 65535   ou   '\u0000' até '\uffff'
+        byte	                                 8	                               1	                      -128 até 127   ou   -27 até 27-1
+        short	                                16                               2                       -32.768 até 32.767   ou  -215 até 215-1
         int	                                  32                               4                       -2.147.483.648 até 2.147.483.647 ou -231 até 231-1
-        long	                              64                               8                       -263 até 263 -1
-        float	                              32	                           4	                   1.4e-45 até 3.4e+38
-        double	                              64	                           8	                   4.9e-324 até 1.8e+308
+        long	                                 64                               8                       -263 até 263 -1
+        float	                                32	                              4	                      1.4e-45 até 3.4e+38
+        double	                               64	                              8	                      4.9e-324 até 1.8e+308
 
 
  ! ESTRUTURAS DE REPETIÇÃO    
